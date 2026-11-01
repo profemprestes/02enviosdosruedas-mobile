@@ -5,6 +5,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useFonts, Anton_400Regular } from '@expo-google-fonts/anton';
 import { Outfit_400Regular, Outfit_600SemiBold } from '@expo-google-fonts/outfit';
 import { BebasNeue_400Regular } from '@expo-google-fonts/bebas-neue';
+import { GeistMono_400Regular } from '@expo-google-fonts/geist-mono';
 import { ThemeProvider, DefaultTheme } from 'expo-router/react-navigation';
 
 SplashScreen.preventAutoHideAsync();
@@ -15,6 +16,7 @@ export default function RootLayout() {
     Outfit: Outfit_400Regular,
     OutfitSemiBold: Outfit_600SemiBold,
     BebasNeue: BebasNeue_400Regular,
+    GeistMono: GeistMono_400Regular,
   });
 
   useEffect(() => {

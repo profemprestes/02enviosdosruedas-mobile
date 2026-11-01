@@ -1,6 +1,6 @@
 # Estructura del Proyecto — Envíos DosRuedas Mobile
 
-Este documento detalla el árbol completo de archivos y carpetas actual de la aplicación móvil nativa desarrollada con Expo y React Native para Envíos DosRuedas, siguiendo estrictamente la habilidad `expo-router` y los lineamientos de navegación (`10-navegacion-y-rutas-nativas.md`).
+Este documento detalla el árbol completo de archivos y carpetas actual de la aplicación móvil nativa desarrollada con Expo y React Native para Envíos DosRuedas, siguiendo estrictamente la habilidad `expo-design-system` y los lineamientos del sistema de diseño (`05-sistema-de-diseno-y-tokens.md`).
 
 ## Árbol de Directorios y Archivos
 
@@ -40,9 +40,11 @@ Este documento detalla el árbol completo de archivos y carpetas actual de la ap
 │       └── ESTRUCTURA.md    # Árbol de archivos de referencia
 ├── src/                     # Código fuente de la aplicación (Lógica, UI, Servicios)
 │   ├── components/          # UI atómica y reutilizable
-│   │   └── .gitkeep
+│   │   ├── cta-nested-pill.tsx      # Componente de botón con doble píldora anidada
+│   │   ├── double-bezel-card.tsx    # Componente de tarjeta con doble bisel
+│   │   └── index.ts                 # Exportaciones públicas de componentes
 │   ├── constants/           # Constantes del sistema
-│   │   └── theme.ts         # Tokens de diseño (Colores, Tipografía Anton/Outfit, Radios, Sombras)
+│   │   └── theme.ts         # Tokens de diseño (Colores, Tipografía Anton/Outfit/GeistMono, Radios, Sombras)
 │   ├── hooks/               # Hooks custom reutilizables
 │   │   └── .gitkeep
 │   ├── services/            # Capa de red y comunicación API

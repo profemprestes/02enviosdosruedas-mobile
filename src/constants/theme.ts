@@ -51,6 +51,12 @@ export const typography = {
     fontWeight: '400',
     color: colors.muted,
   } as TextStyle,
+  mono: {
+    fontFamily: 'GeistMono',
+    fontSize: 14,
+    color: colors.text,
+    fontVariant: ['tabular-nums'],
+  } as TextStyle,
 };
 
 export const radius = {

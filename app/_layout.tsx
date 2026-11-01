@@ -5,6 +5,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useFonts, Anton_400Regular } from '@expo-google-fonts/anton';
 import { Outfit_400Regular, Outfit_600SemiBold } from '@expo-google-fonts/outfit';
 import { BebasNeue_400Regular } from '@expo-google-fonts/bebas-neue';
+import { ThemeProvider, DefaultTheme } from 'expo-router/react-navigation';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -31,11 +32,28 @@ export default function RootLayout() {
   }
 
   return (
-    <>
+    <ThemeProvider value={DefaultTheme}>
       <StatusBar style="light" />
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen
+          name="modal/shipping-detail"
+          options={{
+            presentation: 'formSheet',
+            sheetGrabberVisible: true,
+            headerShown: true,
+            title: 'Detalle de Envío',
+          }}
+        />
+        <Stack.Screen
+          name="modal/assistant-chat"
+          options={{
+            presentation: 'modal',
+            headerShown: true,
+            title: 'Asistente DosRuedas',
+          }}
+        />
       </Stack>
-    </>
+    </ThemeProvider>
   );
 }

@@ -1,19 +1,22 @@
 # Estructura del Proyecto — Envíos DosRuedas Mobile
 
-Este documento detalla el árbol completo de archivos y carpetas actual de la aplicación móvil nativa desarrollada con Expo y React Native para Envíos DosRuedas.
+Este documento detalla el árbol completo de archivos y carpetas actual de la aplicación móvil nativa desarrollada con Expo y React Native para Envíos DosRuedas, siguiendo estrictamente la habilidad `expo-router` y los lineamientos de navegación (`10-navegacion-y-rutas-nativas.md`).
 
 ## Árbol de Directorios y Archivos
 
 ```text
 ├── .claude/                 # Configuración y skills de Claude Code
 ├── app/                     # Expo Router routes ONLY (rutas de la app)
-│   ├── _layout.tsx          # Layout raíz (proveedor de navegación y carga de fuentes)
-│   └── (tabs)/              # Navegación principal en pestañas inferiores
-│       ├── _layout.tsx      # Configuración del tab bar (Azul corporativo y Amarillo vial)
-│       ├── index.tsx        # Pantalla de Inicio
-│       ├── cotizar.tsx      # Pantalla de Cotizar
-│       ├── servicios.tsx    # Pantalla de Servicios
-│       └── contacto.tsx     # Pantalla de Contacto
+│   ├── _layout.tsx          # Layout raíz (proveedor de navegación, Stack global, modales)
+│   ├── (tabs)/              # Navegación principal en pestañas inferiores
+│   │   ├── _layout.tsx      # Configuración del tab bar (Azul corporativo #0950F6 y Amarillo vial #FFEC01)
+│   │   ├── index.tsx        # Pantalla de Inicio
+│   │   ├── cotizar.tsx      # Pantalla de Cotizar
+│   │   ├── servicios.tsx    # Pantalla de Servicios
+│   │   └── contacto.tsx     # Pantalla de Contacto
+│   └── modal/               # Rutas modales y formSheets
+│       ├── shipping-detail.tsx # Modal de detalles de envío (formSheet)
+│       └── assistant-chat.tsx  # Modal de chat del asistente virtual
 ├── assets/                  # Imágenes, fuentes y assets estáticos
 │   ├── android-icon-background.png
 │   ├── android-icon-foreground.png
@@ -46,7 +49,7 @@ Este documento detalla el árbol completo de archivos y carpetas actual de la ap
 │   │   └── api.ts           # Cliente HTTP base (fetch nativo, AbortController, DTOs)
 │   └── types/               # Definiciones de tipos TypeScript
 │       └── api.ts           # Contratos DTO (Cotización, Asistente Gemini, Rutas)
-├── app.json                 # Configuración principal de Expo y esquemas de navegación
+├── app.json                 # Configuración principal de Expo (scheme, bundleIdentifier, plugins)
 ├── eas.json                 # Configuración de EAS Build y despliegue en la nube
 ├── package.json             # Dependencias y scripts del proyecto
 ├── pnpm-lock.yaml           # Archivo de bloqueo de dependencias de pnpm

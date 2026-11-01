@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     borderRadius: radius.full,
     borderCurve: 'continuous',
     padding: 4,
-    ...shadows.raised,
+    boxShadow: shadows.raised,
   },
   secondaryOuter: {
     backgroundColor: colors.blue100,

@@ -24,10 +24,10 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: colors.blue200,
     padding: 6,
-    ...shadows.card,
+    boxShadow: shadows.card,
   },
   elevated: {
-    ...shadows.raised,
+    boxShadow: shadows.raised,
     borderColor: colors.blue300,
   },
   innerBezel: {

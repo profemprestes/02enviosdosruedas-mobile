@@ -6,15 +6,15 @@ export const brandColors = {
   blue200: '#8EAFFB',
   blue300: '#628FF9',
   blue400: '#3570F8',
-  blue500: '#0950F6', // Azul Corporativo Canónico
+  blue500: '#0950F6', // Azul Corporativo Canónico (#0950F6)
   yellow50: '#FFFDE6',
   yellow100: '#FFFAB8',
   yellow200: '#FFF78A',
   yellow300: '#FFF45C',
   yellow400: '#FFF12E',
-  yellow500: '#FFEC01', // Amarillo Vial CTA
+  yellow500: '#FFEC01', // Amarillo Vial CTA (#FFEC01)
   yellow600: '#E6D400',
-  white: '#FFFFFF',
+  white: '#FFFFFF', // Blanco (#FFFFFF)
   black: '#000000',
   text: '#111827',
   muted: '#6B7280',
@@ -67,18 +67,7 @@ export const radius = {
 } as const;
 
 export const shadows = {
-  card: {
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 2,
-    elevation: 2,
-  },
-  raised: {
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.1,
-    shadowRadius: 12,
-    elevation: 4,
-  },
+  card: '0 1px 2px rgba(0, 0, 0, 0.05)',
+  raised: '0 4px 12px rgba(0, 0, 0, 0.10)',
+  overlay: '0 8px 24px rgba(0, 0, 0, 0.18)',
 } as const;

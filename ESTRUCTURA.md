@@ -1,3 +1,9 @@
+# Estructura del Proyecto — Envíos DosRuedas Mobile
+
+Este documento detalla el árbol completo de archivos y carpetas actual de la aplicación móvil nativa desarrollada con Expo y React Native para Envíos DosRuedas.
+
+## Árbol de Directorios y Archivos
+
 ```text
 ├── .claude/                 # Configuración y skills de Claude Code
 ├── app/                     # Expo Router routes ONLY (rutas de la app)
@@ -29,7 +35,6 @@
 │       ├── 10-navegacion-y-rutas-nativas.md
 │       ├── 11-despliegue-y-servicios-eas.md
 │       └── ESTRUCTURA.md    # Árbol de archivos de referencia
-├── node_modules/            # Dependencias del proyecto
 ├── src/                     # Código fuente de la aplicación (Lógica, UI, Servicios)
 │   ├── components/          # UI atómica y reutilizable
 │   │   └── .gitkeep
